@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 3rem 1rem;
+  font-family: system-ui, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Zentrierter Container */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+/* Einheitliche Größe */
+.video-item {
+  width: 640px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Video bleibt IMMER gleich groß */
+video {
+  width: 640px;
+  height: 360px; /* 16:9 */
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+/* Kein Hover, kein Zoom */
+.video-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+
+/* Titel */
+.video-item span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #ddd;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 4rem 0 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.game-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.game-card {
+  width: 360px;
+  padding: 2rem;
+  border-radius: 14px;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.game-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.game-card p {
+  margin: 0;
+  color: #bbb;
+  font-size: 1.4rem;
+}
